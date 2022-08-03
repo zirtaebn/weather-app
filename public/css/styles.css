@@ -1,0 +1,156 @@
+* {
+    
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+
+    background-color: #022D50;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    
+
+}
+
+
+header {
+
+    margin: 15px 0;
+    height: 150px;
+    width: 150px;
+    background-color: #fff;
+}
+
+h1 {
+
+    padding: 10% 0;
+    font-size: 2rem;
+    padding-left: 5px;
+    color: #000;
+    
+}
+
+.container {
+
+    flex:1;
+    width: 100%;
+    text-align: center;
+   
+}
+
+.not-found--container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=text] {
+
+    padding: 15px 20px;
+    border-radius: 20px;
+    border: none;
+    width: 40%;
+    color: #fff;
+    font-size: 1.2rem;
+    
+    background-color: #355773;
+    outline: none;
+}
+
+input[type=text]::placeholder {
+
+    color: #fff;
+    
+}
+
+input[type=submit] {
+
+    padding: 15px 10px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #011B30;
+    border: none;
+    border-radius: 20px;
+    width: 80px;
+    cursor: pointer;
+}
+
+.weather-data {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+
+    font-size: 1.5rem;
+
+} 
+
+.weather-data div {
+
+    margin: 5px 0;
+}
+
+.weather-data img {
+
+    width: 10rem;
+}
+
+.temps {
+
+    font-size: 1rem;
+}
+
+footer {
+
+    margin: 10px 0;
+    font-size: .8rem;
+    text-align: center;
+}
+
+footer a {
+
+    color: #fff;
+}
+
+
+
+@media(max-width:430px) {
+
+   form {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+   }
+
+   input[type=text] {
+
+        width: 90%;
+        margin: 15px 0;
+        padding: 10px 15px;
+   }
+
+   input[type=submit] {
+
+        width: 30%;
+        padding: 15px 5px;
+        margin: 15px 0;
+   }
+
+   .weather-data img {
+
+        margin:0;
+    }
+
+
+}
